@@ -8,7 +8,9 @@ import getLeaderboardController from './controllers/getLeaderboardController';
 config();
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: "https://flipgame.aayush65.com"
+}));
 
 
 app.post('/entry', postLeaderboardController);

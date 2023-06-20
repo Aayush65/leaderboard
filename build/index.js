@@ -12,7 +12,9 @@ const getLeaderboardController_1 = __importDefault(require("./controllers/getLea
 (0, dotenv_1.config)();
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-app.use((0, cors_1.default)());
+app.use((0, cors_1.default)({
+    origin: "https://flipgame.aayush65.com"
+}));
 app.post('/entry', postLeaderboardController_1.default);
 app.get('/entry/:difficulty', getLeaderboardController_1.default);
 mongoose_1.default.connect(process.env.MONGO_URL).then(() => {
