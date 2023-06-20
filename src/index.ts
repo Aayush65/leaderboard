@@ -8,9 +8,7 @@ import getLeaderboardController from './controllers/getLeaderboardController';
 config();
 const app = express();
 app.use(express.json());
-app.use(cors({
-    origin: "*"
-}));
+app.use(cors());
 
 
 app.post('/entry', postLeaderboardController);
