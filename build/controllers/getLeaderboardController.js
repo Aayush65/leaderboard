@@ -16,7 +16,7 @@ const score_1 = __importDefault(require("../models/score"));
 function getLeaderboardController(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         const difficulty = req.params.difficulty;
-        const scores = yield score_1.default.find({ difficulty: difficulty }).sort({ clicks: 1 }).limit(5).select('name clicks').lean();
+        const scores = yield score_1.default.find({ difficulty: difficulty }).sort({ clicks: 1 }).limit(10).select('name clicks').lean();
         res.json(scores);
     });
 }
