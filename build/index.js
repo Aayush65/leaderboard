@@ -13,7 +13,7 @@ const getLeaderboardController_1 = __importDefault(require("./controllers/getLea
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
-    origin: "https://flipgame.aayush65.com"
+    origin: "*"
 }));
 app.post('/entry', postLeaderboardController_1.default);
 app.get('/entry/:difficulty', getLeaderboardController_1.default);

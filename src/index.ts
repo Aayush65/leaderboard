@@ -9,7 +9,7 @@ config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "https://flipgame.aayush65.com"
+    origin: "*"
 }));
 
 
