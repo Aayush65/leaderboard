@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 
 const leaderboardSchema = new Schema({
     name: String,
-    clicks: Number
+    clicks: Number,
+    difficulty: String
 });
 
 const LeaderboardModel = mongoose.model("leaderboard", leaderboardSchema);

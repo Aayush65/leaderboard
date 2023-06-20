@@ -12,12 +12,14 @@ app.use(cors());
 
 
 app.post('/entry', async (req: Request, res: Response) => {
-    const { name, clicks } = req.body;
-    if (!name){
+    const { name, clicks, difficulty } = req.body;
+    if (!name)
         res.status(400).json({ message: "Missing name" });
-    } else if (!clicks) {
+    else if (!clicks)
         res.status(400).json({ message: "Missing clicks" });
-    } else {
+    else if (!difficulty)
+        res.status(400).json({ message: "Missing difficulty" });
+    else {
         const newScore = new LeaderboardModel({ name, clicks });
         const addScore = await newScore.save();
         res.json(addScore);
@@ -26,7 +28,7 @@ app.post('/entry', async (req: Request, res: Response) => {
 
 
 app.get('/entry', async (req: Request, res: Response) => {
-    const scores = await LeaderboardModel.find().sort({ clicks: 1}).limit(5);
+    const scores = await LeaderboardModel.find().sort({ clicks: 1 }).limit(5);
     res.json(scores);
 })
 
