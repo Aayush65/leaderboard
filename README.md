@@ -5,7 +5,7 @@ This is the repository for the backend server for the hosted [Flipgame](https://
 
 # Flip Game
 
-It is a Memory-based Game made up of flipped tiles that have some images on their rear side. One has to match cards bearing identical images with the least amount of flips to win the game. Also integrated with a real-time leaderboard.
+It is a Memory-based Game made up of flipped tiles with images on their rear side. One has to match cards bearing identical pictures with the least amount of flips to win the game. It is also integrated with a real-time leaderboard.
 
 You can play this amazing game [here](https://flipgame.aayush65.com)
 
@@ -28,7 +28,7 @@ You can play this amazing game [here](https://flipgame.aayush65.com)
 ## Frontend
 
 The front end for this site is hosted on Github Pages.
-The repository for the server is [here](https://github.com/Aayush65/leaderboard).
+The repository for the frontend is [here](https://github.com/Aayush65/flipgame).
 
 
 ## Deployment
