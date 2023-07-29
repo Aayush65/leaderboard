@@ -54,6 +54,11 @@ Now, install the required packages and run the server
 
 After deploying the server, deploy the frontend [here](https://github.com/Aayush65/flipgame).
 
+
+## Performance
+![Lighthouse score](https://github.com/Aayush65/leaderboard/assets/79572409/af0beb83-1329-4765-8fba-06e907bff9f2)
+
+
 ## Demo
 
 Hosted site [link](https://flipgame.aayush65.com)
