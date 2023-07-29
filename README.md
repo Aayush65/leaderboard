@@ -33,7 +33,7 @@ The repository for the server is [here](https://github.com/Aayush65/leaderboard)
 
 ## Deployment
 
-After deploying the server, run the following commands for a successful deployment
+Before deploying the frontend, run the following commands for a successful deployment
 
 ```bash
   git clone https://github.com/Aayush65/flipgame
